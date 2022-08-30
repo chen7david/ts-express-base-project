@@ -10,14 +10,22 @@ npm run build
 npm run dev
 npm run format
 npm run test
+npm run db:up
+npm run db:down
+npm run db:drop
+npm run db:latest
+npm run db:seed
+npm run knex migrate:make create-users-table
+npm run knex seed:make 01-users
+npm run knex seed:run
 npm run check-types
 npm run check-format
 npm run check-lint
 npm run check-all
-docker:dev:up
-docker:dev:down
-docker:prod:up
-docker:prod:down
+npm run docker:dev:up
+npm run docker:dev:down
+npm run docker:prod:up
+npm run docker:prod:down
 ```
 
 ## Installed Dependencies
