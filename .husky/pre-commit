@@ -2,6 +2,12 @@
 . "$(dirname -- "$0")/_/husky.sh"
 echo 'Styling, testing, and building your project before committing'
 
+# Format all code
+npm run format || {
+    echo 'Failed format';
+    false;
+}
+
 # Check tsconfig standards
 npm run check-types || {
     echo 'Failed type-check';
