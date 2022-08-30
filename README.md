@@ -1,6 +1,6 @@
 # ts-base-project
 
-This is a base typescript project with testing and linting preconfigured
+This is a typescript based project with testing and linting and docker pre-configured.
 
 ## Project Commands
 
