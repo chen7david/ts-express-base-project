@@ -13,7 +13,11 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "eslint --ext ts --ext tsx --ext js",
-    "check-all": "npm run check-format &&npm run check-lint &&npm run check-types &&npm run build"
+    "check-all": "npm run check-format &&npm run check-lint &&npm run check-types &&npm run build",
+    "docker:dev:up": "docker-compose -f docker-compose.dev.yaml up -d",
+    "docker:dev:down": "docker-compose -f docker-compose.dev.yaml down",
+    "docker:prod:up": "docker-compose up --build -d",
+    "docker:prod:down": "docker-compose down"
   },
   "repository": {
     "type": "git",
